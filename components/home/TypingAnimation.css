@@ -1,0 +1,32 @@
+.text-xl {
+ overflow: hidden;
+ /* Oculta el texto que se desborda */
+ white-space: nowrap;
+ /* Evita que el texto se divida en múltiples líneas */
+ border-right: 2px solid transparent;
+ /* Crea un efecto de cursor */
+ animation: typing 1s steps(28, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+ from {
+  width: 0;
+ }
+
+ to {
+  width: 100%;
+ }
+}
+
+@keyframes blink-caret {
+
+ from,
+ to {
+  border-color: transparent;
+ }
+
+ 50% {
+  border-color: black;
+  /* Color del cursor */
+ }
+}
