@@ -2,20 +2,20 @@
 import 'tailwindcss/tailwind.css';
 
 export default function Navbar() {
-  const start = <h1 className="text-gray-300 text-3xl font-semibold  hover:text-gray-100 cursor-pointer">Jared</h1>;
+  const start = <h1 className="text-gray-300 text-3xl font-semibold select-none hover:text-gray-100 cursor-pointer">Jared</h1>;
   const end = (
-        <div>
-          <ul className='text-gray-400 w-3/4 flex justify-around '>
-            <li className='mx-4 hover:text-gray-300 cursor-pointer'>HOME</li>
-            <li className='mx-4 hover:text-gray-300 cursor-pointer'>ABOUT</li>
-            <li className='mx-4 hover:text-gray-300 cursor-pointer'>SERVICES</li>
-            <li className='mx-4 hover:text-gray-300 cursor-pointer'>WORKS</li>
-            <li className='mx-4 hover:text-gray-300 cursor-pointer'>BLOG</li>
-            <li className='mx-4 hover:text-gray-300 cursor-pointer'>TESTIMONIAL</li>
-            <li className='mx-4 hover:text-gray-300 cursor-pointer'>CONTACT</li>
-          </ul>
-        </div>
-    );
+    <div>
+      <ul className="text-gray-400 w-3/4 flex justify-around select-none">
+        <li className="mx-4 hover:text-gray-300 cursor-pointer">HOME</li>
+        <li className="mx-4 hover:text-gray-300 cursor-pointer">ABOUT</li>
+        <li className="mx-4 hover:text-gray-300 cursor-pointer">SERVICES</li>
+        <li className="mx-4 hover:text-gray-300 cursor-pointer">WORKS</li>
+        <li className="mx-4 hover:text-gray-300 cursor-pointer">BLOG</li>
+        <li className="mx-4 hover:text-gray-300 cursor-pointer">TESTIMONIAL</li>
+        <li className="mx-4 hover:text-gray-300 cursor-pointer">CONTACT</li>
+      </ul>
+    </div>
+  );
   
 
   return (
