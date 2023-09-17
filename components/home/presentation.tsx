@@ -9,11 +9,10 @@ export default function Presentation() {
     <>
       <section className="w-screen h-screen bg-slate-900 bg-fixed flex flex-col justify-center top-0">
         <h1 className="text-gray-200 text-6xl font-extrabold text-center">
-          Hi! I'm Jared Gal
+          {"Hi! I'm Jared Gal"}
         </h1>
         <h2 className="text-gray-200 text-4xl font-medium text-center py-10">
-          A Professional{' '}
-          {/* <div className="inline-block font-extrabold">{profession}</div> */}
+          A Professional
         </h2>
       </section>
     </>

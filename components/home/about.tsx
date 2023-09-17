@@ -10,7 +10,7 @@ export default function About() {
       <section className="w-screen h-screen bg-[#262626]">
         <div className="flex justify-center h-3/5 items-center">
           <img
-            className="w-1/5 aspect-square rounded-full border border-8 border-gray-500"
+            className="w-1/5 aspect-square rounded-full border-8 border-gray-500"
             src={dev.src}
             alt="Fto del desarrollador"
           />
@@ -18,7 +18,7 @@ export default function About() {
         <section className="flex gap-9 mx-32">
           <div className="w-1/2">
             <h2 className="text-gray-200 text-3xl font-semibold">
-              Hi There! I'm Jared Galicia
+              {"Hi There! I'm Jared Galicia"}
             </h2>
             <p className="text-gray-400 text-lg">
               I am a 19 year old creative web programmer who lives in Oaxaca
