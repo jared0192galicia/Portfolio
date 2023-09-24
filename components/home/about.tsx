@@ -2,6 +2,8 @@
 import 'tailwindcss/tailwind.css';
 import { useEffect, useState } from 'react';
 import dev from '@images/presentationBg.png';
+import 'primeicons/primeicons.css';
+        
 export default function About() {
   const [profession, setProfession] = useState<string>('Web Developer');
 
@@ -26,11 +28,14 @@ export default function About() {
               web and desktop platforms. Developed with the most current web
               development standards.
             </p>
+            <section className="text-gray-300">
+              <div className="pi pi-map-marker"> Location</div>
+            </section>
           </div>
           <div className="w-1/2">
             <ul className="text-gray-200">
               <li className="my-4">
-                Typecript
+                Typescript
                 <div className="bg-gray-400 w-full h-2 border">
                   <div className="bg-gray-700 w-3/4 h-2"></div>
                 </div>
