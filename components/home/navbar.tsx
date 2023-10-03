@@ -6,13 +6,13 @@ export default function Navbar() {
   const end = (
     <div>
       <ul className="text-gray-400 w-3/4 flex justify-around select-none">
-        <li className="mx-4 hover:text-gray-300 cursor-pointer">HOME</li>
-        <li className="mx-4 hover:text-gray-300 cursor-pointer">ABOUT</li>
-        <li className="mx-4 hover:text-gray-300 cursor-pointer">SERVICES</li>
-        <li className="mx-4 hover:text-gray-300 cursor-pointer">WORKS</li>
-        <li className="mx-4 hover:text-gray-300 cursor-pointer">BLOG</li>
-        <li className="mx-4 hover:text-gray-300 cursor-pointer">TESTIMONIAL</li>
-        <li className="mx-4 hover:text-gray-300 cursor-pointer">CONTACT</li>
+        <li className="mx-4 hover:text-gray-200 hover:text-lg transition-all cursor-pointer">HOME</li>
+        <li className="mx-4 hover:text-gray-300 hover:text-lg transition-all cursor-pointer">ABOUT</li>
+        <li className="mx-4 hover:text-gray-300 hover:text-lg transition-all cursor-pointer">SERVICES</li>
+        <li className="mx-4 hover:text-gray-300 hover:text-lg transition-all cursor-pointer">WORKS</li>
+        <li className="mx-4 hover:text-gray-300 hover:text-lg transition-all cursor-pointer">BLOG</li>
+        <li className="mx-4 hover:text-gray-300 hover:text-lg transition-all cursor-pointer">TESTIMONIAL</li>
+        <li className="mx-4 hover:text-gray-300 hover:text-lg transition-all cursor-pointer">CONTACT</li>
       </ul>
     </div>
   );
