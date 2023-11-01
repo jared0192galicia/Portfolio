@@ -2,7 +2,8 @@
 import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { useEffect, useState } from 'react';
-import dev from '../../public/images/presentationBg.png';
+import dev from '@images/presentationBg.png';
+  // import { PrimeIcons } from 'primeicons/primeicons';
 import 'primeicons/primeicons.css';
         
 export default function About() {
@@ -30,7 +31,10 @@ export default function About() {
               development standards.
             </p>
             <section className="text-gray-300">
-              <div className="pi pi-map-marker"> Location</div>
+              <ul>
+                <i className="inline-block pi pi-map-marker"> Oaxaca, Mexico</i>
+                <i className='inline-block pi pi-building'> Studing computing</i>
+              </ul>
             </section>
           </div>
           <div className="w-1/2">
@@ -49,6 +53,24 @@ export default function About() {
               </li>
               <li className="my-4">
                 HTML/CSS3
+                <div className="bg-gray-400 w-full h-2 border">
+                  <div className="bg-gray-700 w-4/5 h-2"></div>
+                </div>
+              </li>
+              <li className="my-4">
+                Java with Spring Boot
+                <div className="bg-gray-400 w-full h-2 border">
+                  <div className="bg-gray-700 w-4/5 h-2"></div>
+                </div>
+              </li>
+              <li className="my-4">
+                Python 3
+                <div className="bg-gray-400 w-full h-2 border">
+                  <div className="bg-gray-700 w-4/5 h-2"></div>
+                </div>
+              </li>
+              <li className="my-4">
+                C
                 <div className="bg-gray-400 w-full h-2 border">
                   <div className="bg-gray-700 w-4/5 h-2"></div>
                 </div>

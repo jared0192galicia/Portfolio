@@ -4,8 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+<<<<<<< HEAD
     "build": "webpack",
     "start": "node ./build/index.js"
+=======
+    "build": "npm i ; next build",
+    "start": "next start",
+    "lint": "next lint"
+>>>>>>> da9458873125d1d107dc20108085e9f36578477a
   },
   "dependencies": {
     "@types/node": "20.5.9",
