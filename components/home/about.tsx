@@ -1,7 +1,8 @@
 'use client';
+import React from 'react';
 import 'tailwindcss/tailwind.css';
 import { useEffect, useState } from 'react';
-import dev from '@images/presentationBg.png';
+import dev from '../../public/images/presentationBg.png';
 import 'primeicons/primeicons.css';
         
 export default function About() {
