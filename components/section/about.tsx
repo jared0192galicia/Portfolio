@@ -1,42 +1,58 @@
-import cn from '@/service/clsx';
-import 'tailwindcss/tailwind.css';
+import cn from "@/service/clsx";
+import "tailwindcss/tailwind.css";
 // import ''
 
-export default function About(props: any) {
-  const bottomFromTop = 'h-full';
+export default function About({ className }: any) {
   return (
     <>
-      <section className="w-1/2 h-[400px] bg-slate-300 flex items-center justify-center">
-        <ul className="flex flex-row items-center space-y-4 border border-cyan-800 w-full h-full">
-          <li className={cn("overflow-auto w-full h-full duration-1000 animate-slide-fade", bottomFromTop)}>
-            <img src={'/icon/react.png'} alt={'alt'} className="w-10 h-10 animate-spin-fast" />
+      <section
+        className={cn(
+          "w-screen h-[300px] flex justify-center items-center flex-col",
+          className
+        )}
+      >
+        <ul className="w-[65vw] h-full tecnology overflow-hidden relative ">
+          <div
+            className="absolute inset-0 bg-cover bg-center blur-sm"
+            style={{ backgroundImage: "url('/icon/desktop.jpeg')" }}
+          ></div>
+          <li>
+            <img src={"/icon/react.png"} alt={"alt"} />
           </li>
-          <li className={cn("overflow-auto w-full h-full duration-1000 animate-slide-fade", bottomFromTop)}>
-            <img src={'/icon/hono.png'} alt={'alt'} className="w-10 h-10 animate-spin-fast" />
+          <li>
+            <img src={"/icon/hono.png"} alt={"alt"} />
           </li>
-          <li className={cn("overflow-auto w-full h-full duration-1000 animate-slide-fade", bottomFromTop)}>
-            <img src={'/icon/node.png'} alt={'alt'} className="w-10 h-10 animate-spin-fast" />
+          <li>
+            <img src={"/icon/node.png"} alt={"alt"} />
           </li>
-          <li className={cn("overflow-auto w-full h-full duration-1000 animate-slide-fade", bottomFromTop)}>
-            <img src={'/icon/bun.png'} alt={'alt'} className="w-10 h-10 animate-spin-fast" />
+          <li>
+            <img src={"/icon/bun.png"} alt={"alt"} />
+          </li>
+          <li>
+            <img src={"/icon/tailwind.png"} alt={"alt"} />
+          </li>
+          <li>
+            <img src={"/icon/ts.png"} alt={"alt"} />
+          </li>
+          <li>
+            <img src={"/icon/java.png"} alt={"alt"} />
+          </li>
+          <li>
+            <img src={"/icon/prime.png"} alt={"alt"} />
+          </li>
+          <li>
+            <img src={"/icon/mySQL.png"} alt={"alt"} />
           </li>
         </ul>
+
+        <picture className="w-3/6 h-24 ">
+          <img
+            className="w-32 h-32 rounded-full absolute top-56 text-white"
+            src="/icon/profile.jpg"
+            alt="Foto de perfil"
+          ></img>
+        </picture>
       </section>
     </>
   );
 }
-
-const CustomListItem: React.FC<{ delay: string; src: string; alt: string }> = ({
-  delay,
-  src,
-  alt,
-}) => {
-  return (
-    <li
-    // className="animate-slideUpRotate"
-    // style={{ '--delay': delay } as React.CSSProperties}
-    >
-      <img src={src} alt={alt} className="max-w-10 max-h-10" />
-    </li>
-  );
-};
