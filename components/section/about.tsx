@@ -11,7 +11,7 @@ export default function About({ className }: any) {
           className
         )}
       >
-        <ul className="w-[65vw] h-full tecnology overflow-hidden relative ">
+        <ul className="w-screen md:w-[65vw] h-full tecnology overflow-hidden relative ">
           <div
             className="absolute inset-0 bg-cover bg-center blur-sm"
             style={{ backgroundImage: "url('/icon/desktop.jpeg')" }}
@@ -44,10 +44,9 @@ export default function About({ className }: any) {
             <img src={"/icon/mySQL.png"} alt={"alt"} />
           </li>
         </ul>
-
-        <picture className="w-3/6 h-24 ">
+        <picture className="w-5/6 md:w-3/6 h-24 relative ">
           <img
-            className="w-32 h-32 rounded-full absolute top-56 text-white"
+            className="w-32 h-32 rounded-full absolute bottom-2 text-white"
             src="/icon/profile.jpg"
             alt="Foto de perfil"
           ></img>
