@@ -17,7 +17,7 @@ export default function Navbar(props: any) {
       ></button>
       <ul
         className={cn(
-          "bg-sky-950 md:flex flex-col sm:flex-row xl:px-20 sticky top-0 hidden",
+          "md:flex flex-col sm:flex-row xl:px-20 sticky top-0 hidden",
           props.className,
           { flex: toggle }
         )}
