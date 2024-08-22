@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <section className="bg-gradient-to-b from-sky-950 to-gray-950">
-        <div className='z-50 sticky -top-2 w-full h-16 bg-gray-950 '></div>
+        <div className='z-50 sticky -top-2 w-full h-12 bg-gray-950 opacity-75'></div>
         <About></About>
         <Navbar className="hover:text-cyan-100" />
         {/* <div className="h-screen w-screen"></div> */}

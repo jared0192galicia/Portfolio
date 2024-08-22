@@ -1,7 +1,20 @@
 import cn from "@/service/clsx";
 import "tailwindcss/tailwind.css";
 
+type fact = {
+  data: string;
+  icon: string;
+};
+
 export default function About({ className }: any) {
+  const factAbout: fact[] = [
+    { data: "Disponible", icon: "" },
+    { data: "31 de Octubre", icon: "" },
+    { data: "Inicio Marzo 2017", icon: "" },
+    { data: "Otro dato", icon: "" },
+    { data: "Gatos", icon: "" },
+    { data: "Gym", icon: "" },
+  ];
   return (
     <>
       <section
@@ -63,16 +76,14 @@ export default function About({ className }: any) {
         </p>
       </section>
       {/* Detalles */}
-      <section className="grid gap-2 p-3">
-        <div className="text-gray-400 cursor-pointer hover:bg-pink-700 hover:text-white text-center rounded-md text-xs border-white border border-solid ">
-          Disponible
-        </div>
-        <div className="text-gray-400 cursor-pointer hover:bg-pink-700 hover:text-white text-center rounded-md text-xs border-white border border-solid ">
-          31 de Octubre
-        </div>
-        <div className="text-gray-400 cursor-pointer hover:bg-pink-700 hover:text-white text-center rounded-md text-xs border-white border border-solid ">
-          Inicio Marzo 2017
-        </div>
+      <section className="grid grid-cols-3 gap-2 p-3">
+        {factAbout.map((fact: fact) => (
+          <>
+            <div className="text-gray-400 cursor-pointer hover:bg-pink-700 hover:text-white text-center rounded-md text-xs border-white border border-solid ">
+              {fact.data}
+            </div>
+          </>
+        ))}
         <div></div>
       </section>
     </>
