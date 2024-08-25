@@ -4,7 +4,7 @@ import cn from "@/service/clsx";
 import { useMachine } from "@xstate/react";
 import { useState } from "react";
 
-export default function Navbar(props: any) {
+export default function Navbar({ className, send }: any) {
   const [selected, setSelected] = useState<
     "About" | "Experience" | "Contact" | "Skills"
   >("About");
@@ -13,28 +13,17 @@ export default function Navbar(props: any) {
   const hoverClass =
     "hover:text-fuchsia-500 hover:cursor-pointer transition-colors duration-500";
   const selectedClass: string = "bg-gradient-to-b from-gray-800 to- rounded-sm";
-  const [state, send] = useMachine(navigationMachine);
+  // const [state, send] = useMachine(navigationMachine);
 
   return (
     <>
-      <ul
-        className={cn(
-          "flex flex-row xl:px-20",
-          props.className
-          // { flex: toggle }
-        )}
-      >
+      <ul className={cn("flex flex-row xl:px-20", className)}>
         <li
           className={cn(baseItemClasses, textClass, hoverClass, {
             "text-red-600": selected == "About",
             [selectedClass]: selected == "About",
           })}
-          // onClick={() => setSelected("About")}
-          onClick={() => {
-            // console.log("about");
-            // send({ type: "GO_TO_ABOUT", value: "About" });
-            send({ type: "GO_TO_ABOUT" });
-          }}
+          onClick={() => send({ type: "GO_TO_ABOUT" })}
         >
           Sobre mi
         </li>
@@ -43,9 +32,7 @@ export default function Navbar(props: any) {
             "text-red-600": selected == "Skills",
             [selectedClass]: selected == "Skills",
           })}
-          onClick={() => {
-            send({ type: "GO_TO_SKILLS" });
-          }}
+          onClick={() => send({ type: "GO_TO_SKILLS" })}
         >
           Habilidades
         </li>
