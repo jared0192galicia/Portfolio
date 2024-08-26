@@ -75,9 +75,10 @@ export default function Profile({ className }: any) {
         <p className="text-white text-xs font-extralight">
           Desarrollador creativo. Diseño de aplicaciónes
         </p>
-        <p className="text-white text-xs font-extralight">
-          Deseño de programas. Full Stack ⭐
-        </p>
+        <div className="text-white text-xs font-extralight">
+          Deseño de programas. Full Stack
+          <div className="inline-block animate-bounce">⭐</div>
+        </div>
       </section>
       {/* Detalles */}
       <section className="grid grid-cols-3 gap-2 p-3">
