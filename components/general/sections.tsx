@@ -7,7 +7,7 @@ import Where from "../utilities/where";
 
 export default function Sections({ state }: any) {
   return (
-    <>
+    <section className="md:w-[65vw] md:flex my-0 mx-auto">
       <Where condition={state.matches("about")}>
         <About />
       </Where>
@@ -20,6 +20,6 @@ export default function Sections({ state }: any) {
       <Where condition={state.matches("skills")}>
         <Skills />
       </Where>
-    </>
+    </section>
   );
 }

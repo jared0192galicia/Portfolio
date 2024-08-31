@@ -1,12 +1,11 @@
 import cn from "@/service/clsx";
 import Accordion from "../utilities/accordion";
-import Element from "../utilities/element";
 
 export default function Skills() {
-  const baseClassP: string = "text-white font-extaligth";
+  const baseClassP: string = "text-white font-extaligth md:w-[500px]";
   return (
-    <section className="flex justify-center mt-5">
-      <div className="w-11/12 borde rounded-lg">
+    <section className="flex justify-center mt-5 md:w-full">
+      <div className="w-11/12 borde rounded-lg md md:flex flex-col gap-4 md:w-[500px]">
         <Accordion title="Frontend Development">
           <section className={cn(baseClassP)}>
             <p>TypeScript</p>

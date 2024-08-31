@@ -12,15 +12,16 @@ export default function Profile({ className }: any) {
     { data: "Disponible", icon: "" },
     { data: "31 de Octubre", icon: "" },
     { data: "Inicio Marzo 2017", icon: "" },
-    { data: "Otro dato", icon: "" },
+    { data: "Perfumes", icon: "" },
     { data: "Gatos", icon: "" },
     { data: "Gym", icon: "" },
   ];
+
   return (
     <>
       <section
         className={cn(
-          "w-screen h-[300px] flex justify-center items-center flex-col",
+          "wscreen h-[300px] flex justify-center items-center flex-col",
           className
         )}
       >
@@ -70,12 +71,14 @@ export default function Profile({ className }: any) {
       </section>
       {/* Precentación */}
       <section className="px-7 pt-3">
-        <h1 className="text-white lg:text-3xl font-semibold">Jared Galicia</h1>
-        <p className="text-white text-xs font-extralight">Desarrollador web</p>
-        <p className="text-white text-xs font-extralight">
+        <h1 className="text-white lg:text-2xl font-semibold">Jared Galicia</h1>
+        <p className="text-white text-xs md:text-sm md:font-light font-extralight">
+          Desarrollador web
+        </p>
+        <p className="text-white text-xs md:text-sm md:font-light font-extralight">
           Desarrollador creativo. Diseño de aplicaciónes
         </p>
-        <div className="text-white text-xs font-extralight">
+        <div className="text-white text-xs md:text-sm md:font-light font-extralight">
           Deseño de programas. Full Stack
           <div className="inline-block animate-bounce">⭐</div>
         </div>
@@ -84,7 +87,14 @@ export default function Profile({ className }: any) {
       <section className="grid grid-cols-3 gap-2 p-3">
         {factAbout.map((fact: fact, index) => (
           <React.Fragment key={index}>
-            <div className="text-gray-400 cursor-pointer hover:bg-pink-700 hover:text-white text-center rounded-md text-xs border-white border border-solid ">
+            <div
+              className={cn(
+                "cursor-pointer hover:bg-pink-700 hover:text-white lg:h-6",
+                "rounded-md text-xs border-white border border-solid",
+                "lg:flex lg: justify-center items-center",
+                "text-center text-gray-400",
+              )}
+            >
               {fact.data}
             </div>
           </React.Fragment>

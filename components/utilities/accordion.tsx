@@ -12,10 +12,6 @@ export default function Accordion({ title, children }: any) {
 
   return (
     <div className="border rounded-lg">
-      {/* Título del acordeón */}
-      {/* <button
-      >
-      </button> */}
       <div
         className={cn(
           "text-white w-full px-4 py-2 text-left flex justify-between",
