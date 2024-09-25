@@ -54,7 +54,7 @@ export default function Navbar({ className, send }: any) {
         >
           Experiencia
         </li>
-        <li
+        {/* <li
           className={cn(baseItemClasses, textClass, hoverClass, {
             "text-white": selected == "Contact",
             [selectedClass]: selected == "Contact",
@@ -62,7 +62,7 @@ export default function Navbar({ className, send }: any) {
           onClick={() => setSelected("Contact")}
         >
           Contacto
-        </li>
+        </li> */}
       </ul>
       {/* </nav> */}
     </>

@@ -18,8 +18,8 @@ export default function Home() {
           <Navbar send={send} className="hover:text-cyan-100" />
           <Sections state={state}></Sections>
         </div>
+      <Footer></Footer>
       </section>
-      {/* <Footer></Footer> */}
       <div className="h-screen w-screen bg-gradient-to-t from-cyan-950 to-gray-950"></div>
     </main>
   );

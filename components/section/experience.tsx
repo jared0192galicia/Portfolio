@@ -145,12 +145,12 @@ export default function Experience() {
       <Item>
         <div className="fle itemscenter p-3 border border-yellow-400 rounded-lg bg-gray-800 shadow-lg">
           <div className="flex items-center">
-            <h2 className="text-lg font-bold text-yellow-400">05/2023</h2>{" "}
+            <h2 className="text-lg font-bold text-yellow-400">03/2017</h2>
             {/* Cambiamos el color del texto para resaltar */}
             <span className="ml-2 text-sm text-gray-300">
               ¡Encontré mi pasión!
             </span>
-            <FaCode className="ml-2 text-green-400 animate-bounce" size={28} />{" "}
+            <FaCode className="ml-2 text-green-400 animate-bounce" size={28} />
             {/* Icono más grande y con animación */}
           </div>
           <p className="mt-2 text-base text-white font-bold">
