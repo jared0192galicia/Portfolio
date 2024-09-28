@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     "Portafolio de evidencias web. Contacto: jared0192galicia@gmail.com",
   icons: {
-    icon: "icon/bun.png", // Ruta al archivo del favicon
+    icon: "favicon.ico", // Ruta al archivo del favicon
   },
 };
 

@@ -22,7 +22,7 @@ export default function Sections({ state }: any) {
         <Skills />
       </Where>
       {/* <Where condition={state.matches("")}>
-        <ContactMe />
+        <ContactMe /> 
       </Where> */}
     </section>
   );

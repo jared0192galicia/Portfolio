@@ -4,7 +4,7 @@ import Accordion from "../utilities/accordion";
 export default function Skills() {
   const baseClassP: string = "text-white font-extaligth md:w-[500px]";
   return (
-    <section className="flex justify-center mt-5 md:w-full">
+    <section className="flex justify-center my-5 md:w-full">
       <div className="w-11/12 borde rounded-lg md md:flex flex-col gap-4 md:w-[500px]">
         <Accordion title="Frontend Development">
           <section className={cn(baseClassP)}>
@@ -30,7 +30,7 @@ export default function Skills() {
         </Accordion>
         <Accordion title="Databases & ORM">
           <section className={cn(baseClassP)}>
-            <p>PostgresSQL</p>
+            <p>PostgreSQL</p>
             <p>MySQL</p>
             <p>Hibernate</p>
             <p>KNext</p>
@@ -39,16 +39,17 @@ export default function Skills() {
         <Accordion title="DevOps & Deployment">
           <section className={cn(baseClassP)}>
             <p>GitHub webhooks</p>
-            <p>GitHub</p>
-            <p>Git</p>
+            <p>Nginx</p>
+            <p>VPS</p>
           </section>
         </Accordion>
         <Accordion title="Tools & Utilities">
           <section className={cn(baseClassP)}>
-            <p>Prettier</p>
+            <p>Trello</p>
             <p>ESLint</p>
-            <p>Peacok</p>
-            <p>Npm</p>
+            <p>Git / GitHub</p>
+            <p>Postman</p>
+            <p>Insomnia</p>
           </section>
         </Accordion>
       </div>
