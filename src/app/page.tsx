@@ -12,10 +12,6 @@ export default function Home() {
   const [state, send] = useMachine(navigationMachine);
   return (
     <>
-      <Head>
-        <title>Home</title>
-        {/* <link rel='icon' href='/favicon.ico' /> */}
-      </Head>
       <main>
         <section className="bg-gradient-to-b from-sky-950 to-gray-950">
           <div className="z-50 sticky -top-2 w-full h-12 bg-gray-950 opacity-75 blur-sm"></div>

@@ -21,9 +21,6 @@ export default function Sections({ state }: any) {
       <Where condition={state.matches("skills")}>
         <Skills />
       </Where>
-      {/* <Where condition={state.matches("")}>
-        <ContactMe /> 
-      </Where> */}
     </section>
   );
 }

@@ -1,18 +1,21 @@
 import cn from "@/service/clsx";
 import "@/styles/animation.css";
+import { useRouter } from "next/navigation";
 import React from "react";
 
 type fact = {
   data: string;
   icon: string;
+  href?: string;
 };
 
 export default function Profile({ className }: any) {
+  const router = useRouter();
   const factAbout: fact[] = [
     { data: "Disponible", icon: "" },
     { data: "31 de Octubre", icon: "" },
     { data: "Inicio Marzo 2017", icon: "" },
-    { data: "Perfumes", icon: "" },
+    { data: "Perfumes", icon: "", href: "/fragances" },
     { data: "Gatos", icon: "" },
     { data: "Gym", icon: "" },
   ];
@@ -79,7 +82,7 @@ export default function Profile({ className }: any) {
           Desarrollador creativo. Diseño de aplicaciónes
         </p>
         <div className="text-white text-xs md:text-sm md:font-light font-extralight">
-          Deseño de programas. Full Stack
+          Diseño de programas. Full Stack
           <div className="inline-block animate-bounce">⭐</div>
         </div>
       </section>
@@ -92,8 +95,11 @@ export default function Profile({ className }: any) {
                 "cursor-pointer hover:bg-pink-700 hover:text-white lg:h-6",
                 "rounded-md text-xs border-white border border-solid",
                 "lg:flex lg: justify-center items-center",
-                "text-center text-gray-400",
+                "text-center text-gray-400"
               )}
+              onClick={() => {
+                fact.href ? router.push(fact.href) : "";
+              }}
             >
               {fact.data}
             </div>
