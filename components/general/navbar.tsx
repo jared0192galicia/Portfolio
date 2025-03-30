@@ -6,9 +6,9 @@ import { useState } from "react";
 
 export default function Navbar({ className, send }: any) {
   const [selected, setSelected] = useState<
-    "About" | "Experience" | "Contact" | "Skills"
+    "About" | "Experience" | "Contact" | "Skills" | "projects"
   >("About");
-  const baseItemClasses = "w-1/3 sm:w-1/4 text-center pt-5 pb-2";
+  const baseItemClasses = "min-w-24 sm:w-1/4 text-center pt-5 pb-2";
   const textClass = `text-cyan-500`;
   const hoverClass =
     "hover:text-fuchsia-500 hover:cursor-pointer transition-colors duration-500";
@@ -16,7 +16,7 @@ export default function Navbar({ className, send }: any) {
 
   return (
     <>
-      <ul className={cn("flex flex-row xl:px-20", className)}>
+      <ul className={cn("flex flex-row xl:px-20 overflow-x-scroll", className)}>
         <li
           className={cn(baseItemClasses, textClass, hoverClass, {
             "text-white": selected == "About",
@@ -49,20 +49,23 @@ export default function Navbar({ className, send }: any) {
           // onClick={() => setSelected("Experience")}
           onClick={() => {
             send({ type: "GO_TO_EXPERIENCE" });
-            setSelected('Experience');
+            setSelected("Experience");
           }}
         >
           Experiencia
         </li>
-        {/* <li
+        <li
           className={cn(baseItemClasses, textClass, hoverClass, {
             "text-white": selected == "Contact",
             [selectedClass]: selected == "Contact",
           })}
-          onClick={() => setSelected("Contact")}
+          onClick={() => {
+            send({ type: "GO_TO_PROJECTS" });
+            setSelected("projects");
+          }}
         >
-          Contacto
-        </li> */}
+          Proyectos
+        </li>
       </ul>
       {/* </nav> */}
     </>
