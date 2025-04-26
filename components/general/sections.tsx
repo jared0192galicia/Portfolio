@@ -8,7 +8,7 @@ import ContactMe from "../section/contact";
 
 export default function Sections({ state }: any) {
   return (
-    <section className="md:w-[65vw] md:flex my-0 mx-auto">
+    <section className="md:w-[65vw] md:flex my-0 mx-auto max-w-[840px]">
       <Where condition={state.matches("about")}>
         <About />
       </Where>

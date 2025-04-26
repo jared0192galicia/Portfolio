@@ -25,43 +25,43 @@ export default function Profile({ className }: any) {
       <section
         className={cn(
           "wscreen h-[300px] flex justify-center items-center flex-col",
-          className
+          className,
         )}
       >
-        <ul className="w-screen md:w-[65vw] h-full tecnology overflow-hidden relative lg:min-h-full">
+        <ul className="w-screen md:w-[65vw] h-full tecnology overflow-hidden relative lg:min-h-full max-w-[840px]">
           <div
             className="absolute inset-0 bg-cover bg-center blur-sm"
-            style={{ backgroundImage: "url('/icon/desktop.jpeg')" }}
+            style={{ backgroundImage: "url('/icon/desktop.webp')" }}
           ></div>
           <li>
-            <img src={"/icon/react.png"} alt={"alt"} />
+            <img src={"/icon/react.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/hono.png"} alt={"alt"} />
+            <img src={"/icon/hono.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/node.png"} alt={"alt"} />
+            <img src={"/icon/node.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/bun.png"} alt={"alt"} />
+            <img src={"/icon/bun.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/tailwind.png"} alt={"alt"} />
+            <img src={"/icon/tailwind.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/ts.png"} alt={"alt"} />
+            <img src={"/icon/ts.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/java.png"} alt={"alt"} />
+            <img src={"/icon/java.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/prime.png"} alt={"alt"} />
+            <img src={"/icon/prime.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/mySQL.png"} alt={"alt"} />
+            <img src={"/icon/mySQL.webp"} alt={"alt"} />
           </li>
           <li>
-            <img src={"/icon/git.png"} alt={"alt"} />
+            <img src={"/icon/git.webp"} alt={"alt"} />
           </li>
         </ul>
         <picture className="w-5/6 md:w-3/6 h-24 relative">
@@ -95,7 +95,7 @@ export default function Profile({ className }: any) {
                 "cursor-pointer hover:bg-pink-700 hover:text-white lg:h-6",
                 "rounded-md text-xs border-white border border-solid",
                 "lg:flex lg: justify-center items-center",
-                "text-center text-gray-400"
+                "text-center text-gray-400",
               )}
               onClick={() => {
                 fact.href ? router.push(fact.href) : "";

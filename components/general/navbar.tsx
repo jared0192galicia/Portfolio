@@ -1,14 +1,12 @@
 "use client";
-import { navigationMachine } from "@/app/stores/machineNavigator";
 import cn from "@/service/clsx";
-import { useMachine } from "@xstate/react";
 import { useState } from "react";
 
 export default function Navbar({ className, send }: any) {
   const [selected, setSelected] = useState<
     "About" | "Experience" | "Contact" | "Skills" | "projects"
   >("About");
-  const baseItemClasses = "min-w-24 sm:w-1/4 text-center pt-5 pb-2";
+  const baseItemClasses = "min-w-24 w-1/4 text-center pt-5 pb-2";
   const textClass = `text-cyan-500`;
   const hoverClass =
     "hover:text-fuchsia-500 hover:cursor-pointer transition-colors duration-500";

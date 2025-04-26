@@ -38,13 +38,13 @@ export default function Footer() {
             >
               <FaLinkedin />
             </a>
-            <a
+            {/* <a
               href="https://wa.me/529513436551"
               className="hover:text-green-600 transition-colors"
               target="_blank"
             >
               <FaWhatsapp />
-            </a>
+            </a> */}
           </div>
         </div>
 
