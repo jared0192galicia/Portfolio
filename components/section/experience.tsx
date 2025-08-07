@@ -11,10 +11,30 @@ import {
 import { MdLockReset } from "react-icons/md";
 import { SiHandlebarsdotjs, SiXstate } from "react-icons/si";
 import Preslow from "@/public/preslow_est.svg";
+import Sat from "@/public/sat.svg";
 import Animate from "@/utils/animation";
 export default function Experience() {
   return (
     <section className="border-l ml-4 mt-7">
+      <Animate>
+        <Item>
+          <div className="flex items-center">
+            <h2 className="text-lg font-bold text-white">07/2025</h2>
+            <span className="ml-2 text-sm text-gray-400">
+              Conexion con el
+            </span>
+            <div className="flex items-center gap-2">
+              <Sat className="ml-2" width={28} height={25} />
+              <span className="text-white font-semibold">SAT</span>
+            </div>
+          </div>
+          <p className="mt-2 text-sm text-gray-300">
+            Creación de servicio en Bun para conectar con el SAT y descargar
+            CFDI's para multiples empresas.
+          </p>
+        </Item>
+      </Animate>
+
       <Animate>
         <Item>
           <div className="flex items-center">
@@ -25,11 +45,10 @@ export default function Experience() {
             <FaFileInvoiceDollar className="ml-2 text-green-600" size={24} />
           </div>
           <p className="mt-2 text-sm text-gray-300">
-            Se implementó una plataforma donde proveedores pueden
-            subir facturas que son procesadas automáticamente para extraer su
-            información. La empresa receptora accede a esta información
-            estructurada, puede añadir comentarios en un chat por factura y
-            gestionar complementos relacionados.
+            Creación de plataforma para que los proveedores suban sus facturas
+            XML que se procesan automáticamente para generar reportes.
+            Implementa un chat para cada factura y gestionar complementos
+            relacionados.
           </p>
         </Item>
       </Animate>
