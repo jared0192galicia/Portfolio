@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa"; // Librería para íconos
+import { FaGithub, FaLinkedin } from "react-icons/fa"; // Librería para íconos
 
 export default function Footer() {
   return (

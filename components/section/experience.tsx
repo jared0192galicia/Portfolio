@@ -1,10 +1,12 @@
 import {
   FaCode,
   FaDatabase,
+  FaFileInvoiceDollar,
   FaJava,
   FaPaypal,
   FaReact,
   FaShopify,
+  FaUniversity,
 } from "react-icons/fa";
 import { MdLockReset } from "react-icons/md";
 import { SiHandlebarsdotjs, SiXstate } from "react-icons/si";
@@ -13,6 +15,41 @@ import Animate from "@/utils/animation";
 export default function Experience() {
   return (
     <section className="border-l ml-4 mt-7">
+      <Animate>
+        <Item>
+          <div className="flex items-center">
+            <h2 className="text-lg font-bold text-white">06/2025</h2>
+            <span className="ml-2 text-sm text-gray-400">
+              Plataforma de recepción de facturas
+            </span>
+            <FaFileInvoiceDollar className="ml-2 text-green-600" size={24} />
+          </div>
+          <p className="mt-2 text-sm text-gray-300">
+            Se implementó una plataforma donde proveedores pueden
+            subir facturas que son procesadas automáticamente para extraer su
+            información. La empresa receptora accede a esta información
+            estructurada, puede añadir comentarios en un chat por factura y
+            gestionar complementos relacionados.
+          </p>
+        </Item>
+      </Animate>
+
+      <Animate>
+        <Item>
+          <div className="flex items-center">
+            <h2 className="text-lg font-bold text-white">05/2025</h2>
+            <span className="ml-2 text-sm text-gray-400">
+              Reportes antidoping
+            </span>
+            <FaUniversity className="ml-2 text-yellow-500" size={24} />
+          </div>
+          <p className="mt-2 text-sm text-gray-300">
+            Se implementó y desplego una plataforma para generar reportes de
+            antidoping para la Universidad de la Sierra Sur en una red interna
+            de la universidad.
+          </p>
+        </Item>
+      </Animate>
       <Animate>
         <Item>
           <div className="flex items-center">
