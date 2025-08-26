@@ -1,5 +1,6 @@
 import cn from "@/service/clsx";
 import "@/styles/animation.css";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -34,42 +35,44 @@ export default function Profile({ className }: any) {
             style={{ backgroundImage: "url('/icon/desktop.webp')" }}
           ></div>
           <li>
-            <img src={"/icon/react.webp"} alt={"alt"} />
+            <Image src="/icon/react.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/hono.webp"} alt={"alt"} />
+            <Image src="/icon/hono.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/node.webp"} alt={"alt"} />
+            <Image src="/icon/node.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/bun.webp"} alt={"alt"} />
+            <Image src="/icon/bun.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/tailwind.webp"} alt={"alt"} />
+            <Image src="/icon/tailwind.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/ts.webp"} alt={"alt"} />
+            <Image src="/icon/ts.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/java.webp"} alt={"alt"} />
+            <Image src="/icon/java.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/prime.webp"} alt={"alt"} />
+            <Image src="/icon/prime.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/mySQL.webp"} alt={"alt"} />
+            <Image src="/icon/mySQL.webp" alt="alt" width={80} height={80} />
           </li>
           <li>
-            <img src={"/icon/git.webp"} alt={"alt"} />
+            <Image src="/icon/git.webp" alt="alt" width={80} height={80} />
           </li>
         </ul>
+
         <picture className="w-5/6 md:w-3/6 h-24 relative">
-          <img
-            className="w-24 h-24 md:w-32 md:h-32 rounded-full absolute bottom-2 text-white lg:-bottom-14"
+          <Image
             src="/icon/profile.jpg"
             alt="Foto de perfil"
-          ></img>
+            fill
+            className="w-24 h-24 md:w-32 md:h-32 rounded-full absolute bottom-2 text-white lg:-bottom-14 object-cover"
+          />
         </picture>
       </section>
       {/* Precentación */}

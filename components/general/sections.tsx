@@ -4,7 +4,6 @@ import Experience from "@/components/section/experience";
 import Projects from "@/components/section/projects";
 import Skills from "../section/skills";
 import Where from "../utilities/where";
-import ContactMe from "../section/contact";
 
 export default function Sections({ state }: any) {
   return (

@@ -30,7 +30,7 @@ export default function Experience() {
           </div>
           <p className="mt-2 text-sm text-gray-300">
             Creación de servicio en Bun para conectar con el SAT y descargar
-            CFDI's para multiples empresas.
+            CFDIs para multiples empresas.
           </p>
         </Item>
       </Animate>
