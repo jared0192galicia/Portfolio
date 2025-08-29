@@ -65,14 +65,15 @@ export default function Profile({ className }: any) {
             <Image src="/icon/git.webp" alt="alt" width={80} height={80} />
           </li>
         </ul>
-
         <picture className="w-5/6 md:w-3/6 h-24 relative">
-          <Image
-            src="/icon/profile.jpg"
-            alt="Foto de perfil"
-            fill
-            className="w-24 h-24 md:w-32 md:h-32 rounded-full absolute bottom-2 text-white lg:-bottom-14 object-cover"
-          />
+          <div className="w-24 h-24 md:w-32 md:h-32 rounded-full absolute bottom-2 lg:-bottom-14 overflow-hidden">
+            <Image
+              src="/icon/profile.jpg"
+              alt="Foto de perfil"
+              fill
+              className="object-cover"
+            />
+          </div>
         </picture>
       </section>
       {/* Precentación */}
