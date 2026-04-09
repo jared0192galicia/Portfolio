@@ -1,5 +1,5 @@
 "use client";
-import cn from "@/service/clsx";
+import cn from "@/services/clsx";
 import { useState } from "react";
 
 export default function Navbar({ className, send }: any) {

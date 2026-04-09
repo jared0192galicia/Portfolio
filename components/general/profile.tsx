@@ -1,4 +1,4 @@
-import cn from "@/service/clsx";
+import cn from "@/services/clsx";
 import "@/styles/animation.css";
 import Image from "next/image";
 import { useRouter } from "next/navigation";

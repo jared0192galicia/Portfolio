@@ -1,4 +1,4 @@
-import cn from "@/service/clsx";
+import cn from "@/services/clsx";
 import Accordion from "../utilities/accordion";
 import Animate from "@/utils/animation";
 

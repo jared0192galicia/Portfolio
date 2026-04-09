@@ -1,4 +1,4 @@
-import cn from "@/service/clsx";
+import cn from "@/services/clsx";
 import { useState } from "react";
 
 export default function Accordion({ title, children }: any) {

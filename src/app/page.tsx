@@ -1,15 +1,37 @@
-'use client';
+"use client";
 // import "@/styles/globals.css";
 // import "tailwindcss/tailwind.css";
-import Navbar from '@/components/general/navbar';
-import Profile from '@/components/general/profile';
-import Sections from '@/components/general/sections';
-import { useMachine } from '@xstate/react';
-import { navigationMachine } from './stores/machineNavigator';
-import Footer from '@/components/general/footer';
+import Navbar from "@/components/general/navbar";
+import Profile from "@/components/general/profile";
+import Sections from "@/components/general/sections";
+import { useMachine } from "@xstate/react";
+import { navigationMachine } from "./stores/machineNavigator";
+import Footer from "@/components/general/footer";
+import { useEffect } from "react";
+import api from "@/services/magicFetch";
 
 export default function Home() {
   const [state, send] = useMachine(navigationMachine);
+
+  useEffect(() => {
+    saveLocation();
+  }, []);
+
+  const saveLocation = async () => {
+    const locationRes = await fetch("https://ipapi.co/json/");
+    const locationData = await locationRes.json();
+
+    try {
+      await api.portfolio.postCoordenadas({
+        body: {
+          ...locationData,
+        },
+      });
+    } catch (error) {
+      console.log("error:", error);
+    }
+  };
+
   return (
     <>
       <main>

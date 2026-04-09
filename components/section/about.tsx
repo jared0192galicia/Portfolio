@@ -1,4 +1,4 @@
-import cn from "@/service/clsx";
+import cn from "@/services/clsx";
 import Animate from "@/utils/animation";
 
 export default function About() {

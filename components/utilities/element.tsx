@@ -1,4 +1,4 @@
-import cn from "@/service/clsx";
+import cn from "@/services/clsx";
 
 export default function Element({ children, header }: any) {
   const baseClassText: string = "text-white font-extaligth";
